@@ -98,7 +98,6 @@ describe('Post controller', () => {
         afterEach(() => {
             // executed after the test case
             updatePostStub.restore();
-            updatePostStub.restore();
         });
 
         it('should return the created post object', () => {
@@ -111,7 +110,6 @@ describe('Post controller', () => {
                 date: Date.now()
             };
 
-            updatePostStub = sinon.stub(PostModel, 'createPost').yields(null, expectedResult);
             updatePostStub = sinon.stub(PostModel, 'createPost').yields(null, expectedResult);
 
             // Act
